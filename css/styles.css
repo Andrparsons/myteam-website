@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   :root {
     --fs-h1: 6.25rem;
     --fs-h2: 3rem;
@@ -242,6 +242,13 @@ h3 {
   .footer__container {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .intro__container {
+    padding-top: 8.15em;
+    padding-bottom: 15.65em;
   }
 }
 
@@ -377,6 +384,11 @@ h3 {
 }
 
 @media (min-width: 800px) {
+  .logo {
+    max-width: 10em;
+    flex-shrink: 0;
+  }
+
   .nav__list {
     margin-left: 5em;
   }
@@ -418,11 +430,28 @@ h3 {
   .intro {
     background-image: url("../images/bg-pattern-home-1.svg");
     background-repeat: no-repeat;
-    background-position: center left -100px;
+    background-position: top 8.15em left -100px;
+    text-align: left;
   }
 
   .intro__container {
     background-position: bottom right;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .section__title--intro {
+    max-width: 600px;
+    margin: 0;
+  }
+
+  .section__body-text--intro {
+    max-width: 450px;
+    margin: 0;
+    font-size: var(--fs-body1);
+    line-height: 1.5;
+    margin-bottom: 0.5em;
   }
 }
 
