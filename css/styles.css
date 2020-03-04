@@ -125,6 +125,13 @@ h3 {
   line-height: 1.66;
 }
 
+.section__decoration-hr {
+  margin: 0;
+  height: 4px;
+  width: 3.125em;
+  border: 0;
+}
+
 /* containers */
 
 .header__container,
@@ -413,7 +420,7 @@ h3 {
   align-self: stretch;
 }
 
-.intro__decoration--text-line {
+.section__decoration-hr--intro {
   display: none;
 }
 
@@ -465,13 +472,9 @@ h3 {
     margin-bottom: 0.5em;
   }
 
-  .intro__decoration--text-line {
+  .section__decoration-hr--intro {
     display: block;
     background-color: var(--clr-rapture-blue);
-    margin: 0;
-    height: 4px;
-    width: 3.125em;
-    border: 0;
   }
 }
 
