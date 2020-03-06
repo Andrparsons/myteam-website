@@ -111,6 +111,7 @@ h1 {
 }
 h2 {
   font-size: var(--fs-h2);
+  line-height: 1;
 }
 h3 {
   font-size: var(--fs-h3);
@@ -158,6 +159,8 @@ h3 {
 .features__container {
   padding-top: 4em;
   padding-bottom: 4em;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonials__container {
@@ -257,6 +260,10 @@ h3 {
   .intro__container {
     padding-top: 8.15em;
     padding-bottom: 15.65em;
+  }
+
+  .features__container {
+    flex-direction: row;
   }
 }
 
@@ -483,6 +490,26 @@ h3 {
 
 .features {
   background-color: var(--clr-sacremento-state-green);
+  background-image: url("../images/bg-pattern-home-3.svg");
+  background-repeat: no-repeat;
+  background-position: top right -100px;
+}
+
+.features__content {
+  margin-top: 3.5em;
+}
+
+.features__content-item {
+  display: grid;
+}
+
+.section__title--features {
+  margin-top: 1em;
+  max-width: 240px;
+}
+
+.subsection__title--features {
+  color: var(--clr-light-coral);
 }
 
 /* testimonials */
