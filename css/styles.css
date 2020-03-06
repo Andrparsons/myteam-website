@@ -126,6 +126,7 @@ h3 {
 }
 
 .section__decoration-hr {
+  background-color: var(--clr-light-coral);
   margin: 0;
   height: 4px;
   width: 3.125em;
