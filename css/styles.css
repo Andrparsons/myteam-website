@@ -501,6 +501,16 @@ h3 {
 
 .features__content-item {
   display: grid;
+  text-align: center;
+  grid-template-areas:
+    "feature-img"
+    "feature-title"
+    "feature-text";
+  margin-bottom: 3em;
+}
+
+.features__content-item:last-child {
+  margin-bottom: 0;
 }
 
 .section__title--features {
@@ -510,6 +520,25 @@ h3 {
 
 .subsection__title--features {
   color: var(--clr-light-coral);
+  grid-area: feature-title;
+}
+
+.features__content-img {
+  grid-area: feature-img;
+  margin: 0 auto 1em;
+}
+
+.section__body-text--features {
+  grid-area: feature-text;
+  margin: 0.535em 0 0;
+}
+
+@media (min-width: 550px) {
+  .features__content-item {
+    grid-template-areas:
+      "feature-img feature-title"
+      "feature-img feature-text";
+  }
 }
 
 /* testimonials */
