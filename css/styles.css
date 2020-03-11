@@ -92,6 +92,12 @@ p {
   border: 2px solid var(--clr-sacremento-state-green);
 }
 
+.primary-btn--dark:hover,
+.primary-btn--dark:focus {
+  color: var(--clr-white);
+  background-color: var(--clr-sacremento-state-green);
+}
+
 .primary-btn--mobile-nav {
   margin-top: 2.25em;
 }
@@ -592,6 +598,11 @@ h3 {
   margin-top: 1.15em;
 }
 
+.testimonials__content {
+  display: flex;
+  flex-direction: column;
+}
+
 .testimonials__content-item {
   background-image: url("../images/icon-quotes.svg");
   background-repeat: no-repeat;
@@ -621,6 +632,35 @@ h3 {
   .testimonials__content {
     max-width: 575px;
     margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    .section__title--testimonials {
+      max-width: 950px;
+    }
+
+    .testimonials__content {
+      flex-direction: row;
+      max-width: 1110px;
+    }
+
+    .testimonials__content-item {
+      max-width: 350px;
+      margin-right: 1.875em;
+      margin-top: 3.5em;
+    }
+
+    .testimonials__content-item:last-child {
+      margin-right: 0;
+    }
+
+    .testimonials__content-avatar {
+      margin-top: 2em;
+    }
+
+    .subsection__title--testimonials {
+      margin-top: 1.35em;
+    }
   }
 }
 
