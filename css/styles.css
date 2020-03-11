@@ -175,8 +175,8 @@ h3 {
 }
 
 .footer__container {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 4.4em;
+  padding-bottom: 4.4em;
 }
 
 @media (min-width: 550px) {
@@ -276,6 +276,8 @@ h3 {
 .logo {
   max-width: 8em;
 }
+
+/*navigation */
 
 .nav-toggle {
   z-index: 1000;
@@ -703,5 +705,68 @@ h3 {
 }
 
 .footer__container {
+  font-size: var(--fs-body2);
   display: grid;
+  text-align: center;
+  grid-template-areas:
+    "footer__logo"
+    "footer__nav"
+    "footer__address"
+    "footer__social-media"
+    "footer__copyright";
+}
+
+.footer__address,
+.footer__copyright {
+  opacity: 0.6;
+}
+
+.footer__logo {
+  grid-area: footer__logo;
+  margin: 0 auto;
+  max-width: 6.5em;
+}
+
+.footer__nav {
+  grid-area: footer__nav;
+  margin: 1.6em 0;
+}
+
+.nav__link--footer {
+  font-size: var(--fs-body2);
+}
+
+.nav__link--footer:last-child {
+  margin-left: 1.5em;
+}
+
+.footer__address {
+  grid-area: footer__address;
+}
+
+.footer__address--item {
+  margin-bottom: 0.5em;
+}
+
+.footer__social-media {
+  grid-area: footer__social-media;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.66em;
+}
+
+.footer__social-media-link {
+  margin-right: 1.15em;
+}
+.footer__social-media-link:last-child {
+  margin-right: 0;
+}
+
+.footer__social-media-link:hover,
+.footer__social-media-link:focus {
+}
+
+.footer__copyright {
+  grid-area: footer__copyright;
+  margin-top: 1em;
 }
