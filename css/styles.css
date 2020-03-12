@@ -757,6 +757,7 @@ h3 {
 
 .footer__social-media-link {
   margin-right: 1.15em;
+  fill: var(--clr-white);
 }
 .footer__social-media-link:last-child {
   margin-right: 0;
@@ -764,6 +765,7 @@ h3 {
 
 .footer__social-media-link:hover,
 .footer__social-media-link:focus {
+  fill: var(--clr-light-coral);
 }
 
 .footer__copyright {
