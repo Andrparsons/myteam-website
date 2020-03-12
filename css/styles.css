@@ -772,3 +772,34 @@ h3 {
   grid-area: footer__copyright;
   margin-top: 1em;
 }
+
+@media (min-width: 550px) {
+  .footer__container {
+    text-align: start;
+    grid-template-areas:
+      "footer__logo footer__address"
+      "footer__nav footer__address"
+      "footer__social-media footer__copyright";
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__nav {
+    margin: 0;
+  }
+
+  .footer__address {
+    text-align: end;
+  }
+
+  .footer__social-media {
+    margin: 0;
+    justify-content: start;
+  }
+
+  .footer__copyright {
+    text-align: end;
+  }
+}
