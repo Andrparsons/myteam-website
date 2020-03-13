@@ -788,6 +788,7 @@ h3 {
 
   .footer__nav {
     margin: 0;
+    align-self: end;
   }
 
   .footer__address {
@@ -795,11 +796,13 @@ h3 {
   }
 
   .footer__social-media {
-    margin: 0;
+    margin: 2em 0 0 0;
     justify-content: start;
+    align-self: end;
   }
 
   .footer__copyright {
     text-align: end;
+    align-self: end;
   }
 }
