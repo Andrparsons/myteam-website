@@ -139,6 +139,7 @@ h3 {
 
 .header__container,
 .intro__container,
+.about__container,
 .features__container,
 .testimonials__container,
 .CTA__container,
@@ -155,6 +156,11 @@ h3 {
 .intro__container {
   padding-top: 5em;
   padding-bottom: 11.25em;
+}
+
+.about__container {
+  padding-top: 5em;
+  padding-bottom: 6.75em;
 }
 
 .features__container {
@@ -422,7 +428,7 @@ h3 {
   background-position: bottom;
 }
 
-.intro__decoration {
+.intro__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -832,4 +838,32 @@ h3 {
     justify-content: end;
     align-self: flex-start;
   }
+}
+
+/* about */
+
+.about {
+  text-align: center;
+}
+
+.about__container {
+  background-image: url("../images/bg-pattern-about-1-mobile-nav-1.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -100px right -100px;
+}
+
+.section__decoration-hr--about {
+  display: none;
+}
+
+.section__body-text--about {
+  line-height: 1.85;
+  margin-top: 1.125em;
+  margin-bottom: 1.125em;
+}
+
+/* directors */
+
+.directors {
+  background-color: var(--clr-dark-green);
 }
