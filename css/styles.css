@@ -57,6 +57,11 @@ img {
   max-width: 100%;
 }
 
+.avatar {
+  border-radius: 50%;
+  border: 2px solid #c4fffe;
+}
+
 p {
   margin: 0;
 }
@@ -133,6 +138,10 @@ h3 {
   height: 4px;
   width: 3.125em;
   border: 0;
+}
+
+.subsection__title {
+  color: var(--clr-rapture-blue);
 }
 
 /* containers */
@@ -597,8 +606,7 @@ h3 {
   text-align: center;
 }
 
-.section__title--testimonials--highlight,
-.subsection__title--testimonials {
+.section__title--testimonials--highlight {
   color: var(--clr-rapture-blue);
 }
 
@@ -631,8 +639,6 @@ h3 {
 .testimonials__content-avatar {
   width: 3.875em;
   margin: 1em auto 0;
-  border-radius: 50%;
-  border: 2px solid #c4fffe;
 }
 
 @media (min-width: 550px) {
