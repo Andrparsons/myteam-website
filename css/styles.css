@@ -919,6 +919,7 @@ h3 {
   grid-template-columns: 1fr;
   column-gap: 0.5em;
   justify-items: center;
+  justify-content: center;
 }
 
 .directors__content-item {
@@ -927,7 +928,7 @@ h3 {
   padding-bottom: 3.25em;
   height: 245px;
   width: 100%;
-  max-width: 350px;
+  /* max-width: 350px; */
 }
 
 .directors__content-item-front {
@@ -969,16 +970,24 @@ h3 {
   justify-content: center;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 500px) {
   .directors__content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(auto, 280px));
   }
+
+  /* .directors__content-item {
+    max-width: 280px;
+  } */
 }
 
 @media (min-width: 800px) {
   .directors__content {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* .directors__content-item {
+    max-width: 350px;
+  } */
 }
 
 /* clients */
