@@ -55,6 +55,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .avatar {
@@ -172,7 +173,8 @@ h3 {
 .testimonials__container,
 .CTA__container,
 .footer__container,
-.directors__container {
+.directors__container,
+.clients__container {
   max-width: 1110px;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -214,7 +216,8 @@ h3 {
   padding-bottom: 4.4em;
 }
 
-.directors__container {
+.directors__container,
+.clients__container {
   padding-top: 5.5em;
   padding-bottom: 5.5em;
 }
@@ -289,7 +292,8 @@ h3 {
   .CTA__container,
   .footer__container,
   .about__container,
-  .directors__container {
+  .directors__container,
+  .clients__container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
@@ -974,5 +978,51 @@ h3 {
 @media (min-width: 800px) {
   .directors__content {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* clients */
+
+.clients {
+  background-color: var(--clr-sacremento-state-green);
+  text-align: center;
+}
+
+.clients__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.clients__list-logo {
+  align-self: center;
+  margin-top: 1em;
+  scale: 0.45;
+}
+
+.clients__list-logo:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 550px) {
+  .clients__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .clients__list-logo {
+    align-self: center;
+    margin: 0;
+    scale: 0.7;
+  }
+
+  .clients__list-logo:first-child {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients__list-logo {
+    scale: 0.72;
   }
 }
