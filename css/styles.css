@@ -241,11 +241,9 @@ h3 {
     padding-bottom: 16em;
   }
 
-  .features__container {
-    padding-top: 6.25em;
-    padding-bottom: 6.25em;
-  }
-
+  .features__container,
+  .directors__container,
+  .clients__container,
   .testimonials__container {
     padding-top: 6.25em;
     padding-bottom: 6.25em;
@@ -991,6 +989,9 @@ h3 {
 /* clients */
 
 .clients {
+  background-image: url("../images/bg-pattern-about-4.svg");
+  background-repeat: no-repeat;
+  background-position: top -100px left -100px;
   background-color: var(--clr-sacremento-state-green);
   text-align: center;
 }
@@ -1012,6 +1013,10 @@ h3 {
 }
 
 @media (min-width: 550px) {
+  .clients {
+    background-position: top -100px left;
+  }
+
   .clients__list {
     flex-direction: row;
     justify-content: space-between;
