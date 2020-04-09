@@ -970,24 +970,22 @@ h3 {
   justify-content: center;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 450px) {
   .directors__content {
-    grid-template-columns: repeat(2, minmax(auto, 280px));
+    grid-template-columns: repeat(2, minmax(25%, 280px));
   }
-
-  /* .directors__content-item {
-    max-width: 280px;
-  } */
 }
 
 @media (min-width: 800px) {
   .directors__content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(25%, 350px));
   }
+}
 
-  /* .directors__content-item {
-    max-width: 350px;
-  } */
+@media (min-width: 1100px) {
+  .directors__content {
+    justify-content: space-between;
+  }
 }
 
 /* clients */
