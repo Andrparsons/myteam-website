@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   :root {
     --fs-h1: 6.25rem;
     --fs-h2: 3rem;
@@ -209,6 +209,9 @@ h3 {
 .CTA__container {
   padding-top: 5.1875em;
   padding-bottom: 5.1875em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__container {
@@ -250,10 +253,9 @@ h3 {
   }
 
   .CTA__container {
-    padding-top: 4.75em;
-    padding-bottom: 4.75em;
-    padding-left: 6em;
-    padding-right: 6em;
+    padding: 4.75em 0;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .footer__container {
@@ -303,10 +305,15 @@ h3 {
     padding-bottom: 15.65em;
   }
 
-  .features__container {
-    flex-direction: row;
+  .features__container,
+  .directors__container,
+  .clients__container {
     padding-top: 8.75em;
     padding-bottom: 8.75em;
+  }
+
+  .features__container {
+    flex-direction: row;
   }
 }
 
@@ -718,22 +725,11 @@ h3 {
   text-align: center;
 }
 
-.CTA__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .section__title--CTA {
   margin-bottom: 0.75em;
 }
 
 @media (min-width: 550px) {
-  .CTA__container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .section__title--CTA {
     margin: 0;
   }
@@ -1033,7 +1029,11 @@ h3 {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
+  .clients {
+    background-position: top left;
+  }
+
   .clients__list-logo {
     scale: 0.72;
   }
