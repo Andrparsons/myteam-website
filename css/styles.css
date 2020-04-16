@@ -1091,7 +1091,8 @@ h3 {
 }
 
 .contact__content {
-  margin-top: 2.5em;
+  margin: 2.5em auto 0;
+  max-width: 500px;
 }
 
 .contact__form {
@@ -1099,4 +1100,26 @@ h3 {
 }
 
 .contact__content-item {
+  display: grid;
+  column-gap: 1.5em;
+  grid-template-areas: "contact-img contact-text";
+  justify-content: start;
+  margin-bottom: 1em;
+}
+
+.contact__content-img {
+  grid-area: contact-img;
+  min-width: 4.5em;
+}
+
+.section__body-text--contact {
+  grid-area: contact-text;
+  font-size: 1.125rem;
+  font-weight: var(--fw-bold);
+  text-align: left;
+  align-self: center;
+}
+
+.contact__content-item:first-child .contact__content-img {
+  padding-left: 0.5em;
 }
