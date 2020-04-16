@@ -73,13 +73,27 @@ p {
 
 /* buttons */
 
-.primary-btn {
-  background-color: transparent;
+.btn {
   border-radius: 2em;
   padding: 0.5em 1.8em 0.55em;
   font-size: 1.125rem;
   font-weight: var(--fw-semi-bold);
   cursor: pointer;
+}
+
+.primary-btn {
+  background-color: transparent;
+}
+
+.secondary-btn {
+  background-color: var(--clr-white);
+  border: 2px solid var(--clr-white);
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+  background-color: var(--clr-rapture-blue);
+  border: 2px solid var(--clr-rapture-blue);
 }
 
 .primary-btn--light {
