@@ -58,13 +58,46 @@ img {
   height: auto;
 }
 
+p {
+  margin: 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: solid var(--clr-white) 1px;
+  color: var(--clr-white);
+  background: none;
+  cursor: pointer;
+  font-weight: var(--fw-semi-bold);
+  padding-left: 0.875em;
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--clr-white);
+  opacity: 0.6;
+}
+
+input:focus,
+textarea:focus,
+input:hover,
+textarea:hover {
+  border-bottom: solid var(--clr-rapture-blue) 1px;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: none;
+  border-bottom: solid var(--clr-light-coral) 1px;
+  color: var(--clr-light-coral);
+}
+
 .avatar {
   border-radius: 50%;
   border: 2px solid #c4fffe;
-}
-
-p {
-  margin: 0;
 }
 
 .nav-open {
@@ -1096,7 +1129,6 @@ h3 {
   background-image: url("../images/bg-pattern-contact-2.svg");
   background-repeat: no-repeat;
   background-position: bottom -100px right -100px;
-  text-align: center;
 }
 
 .section__subtitle--contact {
